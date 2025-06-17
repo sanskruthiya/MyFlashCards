@@ -16,9 +16,9 @@ const config = {
 			fallback: 'index.html',
 			precompress: false
 		}),
-		// ベースパスを設定（必要に応じて変更）
+		// ベースパスを設定（サブディレクトリにデプロイする場合）
 		paths: {
-			base: ''
+			base: '/flashcards'
 		}
 	}
 };

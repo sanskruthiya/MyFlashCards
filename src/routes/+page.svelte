@@ -13,7 +13,8 @@
 
   onMount(async () => {
     try {
-      cards = await loadFlashcardsFromTSV('/data/flashcards.tsv');
+      // 相対パスで指定して、ベースパスが適用されるようにする
+      cards = await loadFlashcardsFromTSV('./data/flashcards.tsv');
       // 初期表示時にカードをシャッフルする
       cards = shuffleCards(cards);
       loading = false;
