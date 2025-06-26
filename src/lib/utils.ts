@@ -51,3 +51,30 @@ export function shuffleCards(cards: Flashcard[]): Flashcard[] {
   }
   return shuffled;
 }
+
+/**
+ * 利用可能なデータセットの情報を返す
+ * @returns データセット情報の配列
+ */
+export function getAvailableDatasets() {
+  return [
+    { 
+      id: '英単語カード.tsv', 
+      title: '英単語カード', 
+      description: '基本的な英単語を学ぶためのフラッシュカード', 
+      category: '英語学習' 
+    },
+    { 
+      id: '日常会話問答カード.tsv', 
+      title: '日常会話問答カード', 
+      description: '日常会話で使える英語表現を学ぶためのカード', 
+      category: '会話' 
+    },
+    { 
+      id: '場面別会話カード.tsv', 
+      title: '場面別会話カード', 
+      description: '様々な場面で役立つ英語表現を学ぶためのカード', 
+      category: '会話' 
+    }
+  ];
+}

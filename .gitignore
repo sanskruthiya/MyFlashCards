@@ -57,3 +57,6 @@ coverage
 
 # Optional eslint cache
 .eslintcache
+
+# Project specific
+/temp
